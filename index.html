@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Discover Georgia</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="cookieNotification" class="cookie-notification">
+      <div class="cookie-content">
+        <div class="cookie-text">
+          <h4>🍪 Cookie Notice</h4>
+          <p>
+            We use cookies to enhance your experience. By continuing to browse,
+            you agree to our cookie policy.
+          </p>
+        </div>
+        <div class="cookie-buttons">
+          <button id="rejectCookies" class="cookie-btn reject-btn">
+            Reject
+          </button>
+          <button id="acceptCookies" class="cookie-btn accept-btn">
+            Accept
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <nav class="nav">
+        <div class="logo">
+          <img src="imgs/logo.png" alt="Travel Buddy Logo" />
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="#places">Places</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="book-up">
+          <a href="#booking">Book Now</a>
+        </div>
+
+        <div class="burger-menu" id="burgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home Section -->
+      <section class="Banner-section">
+        <div class="banner-img">
+          <img src="imgs/image-6.jpeg" alt="banner" />
+          <div class="banner-text">
+            <h1>Discover Georgia</h1>
+            <p>Let’s start your journey with us, your dream will come true</p>
+            <a href="#booking"> Discover Now</a>
+          </div>
+
+          <div class="banner-Main" id="booking">
+            <div class="Banner-Menu">
+              <p>Hotel</p>
+              <p>Ticket</p>
+              <p>Place</p>
+              <div id="weatherWidget" class="weather-widget-inline">
+                <p id="weatherLoading">Loading...</p>
+              </div>
+            </div>
+            <form class="search-box" id="bookingForm">
+              <select id="place" name="place">
+                <option value="">Choose Place</option>
+                <option>Tbilisi</option>
+                <option>Batumi</option>
+                <option>Kutaisi</option>
+              </select>
+
+              <input type="date" id="checkin" name="checkin" />
+              <input type="date" id="checkout" name="checkout" />
+
+              <select id="persons" name="persons">
+                <option value="">Person</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+
+              <input type="email" id="email" name="email" placeholder="Email" />
+
+              <div class="password-container">
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="reception will ask for this password"
+                />
+              </div>
+
+              <p id="errorMsg" style="color: red; font-size: 14px"></p>
+
+              <button type="submit">Book</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="places-section" id="places">
+        <div>
+          <h2 id="PopularPlaces">Popular Places</h2>
+          <p id="DiscoverText">Discover the most popular places to visit</p>
+          <div class="places-container">
+            <div class="place-card">
+              <img src="imgs/zakatala.jpg" alt="Place 1" />
+              <h3>Zakatala</h3>
+              <p>
+                A beautiful mountain town in Georgia, known for its natural
+                beauty and hiking trails.
+              </p>
+            </div>
+
+            <div class="place-card">
+              <img src="imgs/Klarjeti.jpg" alt="Place 2" />
+              <h3>Klarjeti</h3>
+              <p>
+                A beautiful seaside city on the Black Sea coast, famous for its
+                beaches and nightlife.
+              </p>
+            </div>
+
+            <div class="place-card">
+              <img src="imgs/Tskhinvali.jpg" alt="Place 3" />
+              <h3>Tskhinvali</h3>
+              <p>
+                One of the oldest cities in Georgia, known for its historical
+                sites and natural beauty.
+              </p>
+            </div>
+
+            <div class="place-card">
+              <img src="imgs/sokhumi.jpg" alt="Place 1" />
+              <h3>Sokhumi</h3>
+              <p>
+                Historical city Sokhumi, known for its diverse architecture and
+                vibrant culture.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h3>Discover Georgia</h3>
+          <p>Your journey starts here</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html#about">About</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#places">Places</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div id="contact">
+          <h3>Contact</h3>
+          <ul class="footer-links">
+            <li>Email: info@discovergeo.com</li>
+            <li>Phone: +995 32 2 999 999</li>
+            <li>Tbilisi, Georgia</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow Us</h3>
+          <ul class="socials">
+            <li>
+              <a href="facebook.com">Facebook</a>
+              <img src="imgs/Facebook-f_Logo-Blue-Logo.wine.png" alt="" />
+            </li>
+            <li>
+              <a href="#">Instagram</a>
+              <img src="imgs/Instagram-Logo.wine (1).png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
