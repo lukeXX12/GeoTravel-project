@@ -18,7 +18,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: calc(100% - 20px);
+  margin-right: 1vw;
   background-color: white;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -84,6 +85,10 @@ body {
 @media (max-width: 768px) {
   .burger-menu {
     display: flex;
+  }
+
+  .book-up {
+    margin: 1vw 0.5vw;
   }
 
   .nav-links {
